@@ -1,0 +1,55 @@
+.container {
+  margin-top: 10rem;
+  background-color: black;
+  color: white;
+}
+
+.container h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.wrapper {
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 0rem 1rem;
+}
+
+.copyright {
+  color: #E1E4EA;
+  font-weight: 500;
+}
+
+/* Mobile stylings */
+
+@media only screen and (max-width: 950px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  img {
+    margin: 1rem 0rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+  }
+}

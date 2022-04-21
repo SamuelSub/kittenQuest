@@ -1,0 +1,24 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15rem;
+  width: 78%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+/* Mobile stylings */
+
+@media only screen and (max-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .hero {
+    gap: 5rem
+  }
+}

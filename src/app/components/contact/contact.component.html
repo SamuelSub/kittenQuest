@@ -1,0 +1,39 @@
+<form #contactForm="ngForm" (ngSubmit)="handleContactForm(contactForm.value)">
+  <h1>Contact Us</h1>
+  <p>We are all cat persons, so if you got any question, drop it below and we will contact you back!</p>
+  <div class="name-field">
+    <label for="full-name">Your Full Name</label>
+    <input type="text" name="full-name" placeholder="Type your name" required ngModel>
+  </div>
+  <div class="email-field">
+    <label for="email">Your Email</label>
+    <input type="text" name="email" placeholder="Type your email" required ngModel>
+  </div>
+  
+  <hr>
+  <div class="city-postal-wrapper">
+    <div class="city-field">
+      <label for="city">City</label>
+      <input type="text" name="city" placeholder="ex. Thessaloniki" required ngModel>
+    </div>
+    <div class="postal-code-field">
+      <label for="post-code">Postal Code</label>
+      <input type="text" name="post-code" placeholder="ex. 54658" required ngModel>
+    </div>
+  </div>
+  <div class="address-field">
+    <label for="address">Address</label>
+    <input type="text" name="address" placeholder="ex. Thessaloniki" required ngModel>
+  </div>
+  <div class="text-field">
+    <div class="labels">
+      <label for="message">Your Message</label>
+      <label for="message" id="optional">Optional</label>
+    </div>
+    <textarea name="message" cols="30" rows="10" placeholder="Type your message" ngModel></textarea>
+    <div class="terms">
+      <input type="checkbox" name="terms" id="terms" required ngModel>I agree with the Terms & Conditions
+    </div>
+    <button type="submit">Send!</button>
+  </div>
+</form>

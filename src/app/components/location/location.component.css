@@ -1,0 +1,19 @@
+.details-wrapper {
+  text-align: right;
+}
+
+h2 {
+  margin: 1rem 0rem;
+}
+
+.details-wrapper span {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 900px) {
+  .details-wrapper {
+    text-align: left;
+  }
+}

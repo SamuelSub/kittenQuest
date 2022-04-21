@@ -1,0 +1,24 @@
+<nav>
+  <div class="nav-wrapper">
+    <img src="../../../assets/logo.png" alt="cat logo" class="logo">
+    <ul>
+      <a href="#"><li>Adopt Kittens</li></a> 
+      <a href="#"><li>Kitty Stories</li></a> 
+      <a href="#"><li>About Us</li></a> 
+      <a href="#"><li>Blog</li></a> 
+      <a href="#"><li>Contact</li></a> 
+    </ul>
+    <div class="mobile-nav-wrapper">
+      <img src="../../../assets/menu-icon.png" alt="hamburger icon" (click)="toggleMenu()">
+    </div>
+  </div>
+</nav>
+<div class="menu-placeholder" [@openMenu]="stateName">
+  <ul>
+    <a href="#" (click)="toggleMenu()"><li>Adopt Kittens</li></a> 
+    <a href="#" (click)="toggleMenu()"><li>Kitty Stories</li></a> 
+    <a href="#" (click)="toggleMenu()"><li>About Us</li></a> 
+    <a href="#" (click)="toggleMenu()"><li>Blog</li></a> 
+    <a href="#" (click)="toggleMenu()"><li>Contact</li></a> 
+  </ul>
+</div>
