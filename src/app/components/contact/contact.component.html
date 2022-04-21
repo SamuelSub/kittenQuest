@@ -35,5 +35,7 @@
       <input type="checkbox" name="terms" id="terms" required ngModel>I agree with the Terms & Conditions
     </div>
     <button type="submit">Send!</button>
+    <h5 *ngIf="showSuccessBox" class="email-sucess">{{successMsg}}</h5>
+    <h5 *ngIf="showAlertBox" class="email-alert">{{validationMsg}}</h5>
   </div>
 </form>

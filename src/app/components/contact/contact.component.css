@@ -90,6 +90,23 @@ button {
   color: white;
 }
 
+.email-sucess {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  color: white;
+  text-align: center;
+  background-color: rgb(11, 236, 11);
+  border-radius: 3px;
+}
+
+.email-alert {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: rgb(236, 232, 11);
+  border-radius: 3px;
+}
+
 /* Mobile stylings */
 
 @media only screen and (max-width: 600px) {
